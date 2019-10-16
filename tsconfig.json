@@ -16,7 +16,7 @@
         "noImplicitAny": false,
         "module": "commonjs",
         "target": "ES5",
-        "types": ["node", "@pyoner/svelte-types"],
+        "types": ["node"],
         "lib": ["es5", "es6", "dom"],
         "moduleResolution": "node",
         "forceConsistentCasingInFileNames": true,

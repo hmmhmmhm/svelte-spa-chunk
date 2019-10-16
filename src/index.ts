@@ -1,4 +1,8 @@
-export const Chunk = (dynmaicImport, Component: any) => {
+export const ChunkGenerator = (Component) => {
+    return (dynmaicImport) => Chunk(dynmaicImport, Component)
+}
+
+export const Chunk = (dynmaicImport: () => any, Component) => {
     return class SvelteComponentHook {
         constructor(options){
             options.props = {
