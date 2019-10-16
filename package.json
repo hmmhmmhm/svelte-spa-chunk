@@ -1,6 +1,6 @@
 {
   "name": "svelte-spa-chunk",
-  "version": "0.9.11",
+  "version": "1.0.0",
   "description": "📦 Do the Chunk split on a page-by-page basis. In the svelte-spa-router module.",
   "main": "./dist/index.js",
   "type": "./dist/index.d.ts",
