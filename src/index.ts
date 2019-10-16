@@ -1,6 +1,4 @@
-import ChunkWrap from './chunk.svelte'
-
-export const Chunk = (dynmaicImport, Component: any = ChunkWrap) => {
+export const Chunk = (dynmaicImport, Component: any) => {
     return class SvelteComponentHook {
         constructor(options){
             options.props = {

@@ -9,7 +9,7 @@
             ],
             "dist/*": ["../../dist/*"]
         },
-        "importHelpers": true,
+        "importHelpers": false,
         "sourceMap": false,
         "declaration": true,
         "inlineSourceMap": false,
