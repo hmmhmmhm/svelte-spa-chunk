@@ -1,5 +1,5 @@
 export const ChunkGenerator = (Component) => {
-    return (dynmaicImport) => Chunk(dynamicImport, Component)
+    return (dynamicImport) => Chunk(dynamicImport, Component)
 }
 
 export const Chunk = (dynamicImport: () => any, Component) => {

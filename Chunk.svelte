@@ -1,7 +1,7 @@
 <script>
     import Loadable from 'svelte-loadable'
     export let params = {}
-    export let dynmaicImport
+    export let dynamicImport
 </script>
 
-<Loadable loader={dynmaicImport} params={params} />
+<Loadable loader={dynamicImport} params={params} />

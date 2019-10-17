@@ -1,7 +1,7 @@
-export declare const ChunkGenerator: (Component: any) => (dynmaicImport: any) => {
+export declare const ChunkGenerator: (Component: any) => (dynamicImport: any) => {
     new (options: any): {};
 };
-export declare const Chunk: (dynmaicImport: () => any, Component: any) => {
+export declare const Chunk: (dynamicImport: () => any, Component: any) => {
     new (options: any): {};
 };
 export default Chunk;
