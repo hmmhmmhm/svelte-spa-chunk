@@ -16,6 +16,6 @@
     "svelte-loadable": "^1.4.0"
   },
   "devDependencies": {
-    "@types/node": "^13.7.0"
+    "@types/node": "^13.7.4"
   }
 }

@@ -7,14 +7,16 @@
     export let dynamicImport
     export let delay = 0
 
-    function flashPrevent(node) {
-		return {
-			duration: 4000,
-			tick: t => {
+    const flashPrevent = (node) => {
+        return {
+            duration: 4000,
+            tick: t => {
                 if(get(isPageChanged)){
-                    node.style.display = 'none'
+                    if(node.style.display != 'none')
+                        node.style.display = 'none'
                 }else{
-                    node.style.display = 'block'
+                    if(node.style.display != 'block')
+                        node.style.display = 'block'
                 }
 			}
 		}
