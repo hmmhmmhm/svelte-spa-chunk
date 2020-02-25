@@ -7,26 +7,24 @@
     export let dynamicImport
     export let delay = 0
 
-    const flashPrevent = (node) => {
+    const flashPrevent = node => {
         return {
             duration: 4000,
             tick: t => {
-                if(get(isPageChanged)){
-                    if(node.style.display != 'none')
+                if (get(isPageChanged)) {
+                    if (node.style.display != 'none')
                         node.style.display = 'none'
-                }else{
-                    if(node.style.display != 'block')
+                } else {
+                    if (node.style.display != 'block')
                         node.style.display = 'block'
                 }
-			}
-		}
-	}
+            }
+        }
+    }
 </script>
 
 <Loadable loader={dynamicImport} {params} {delay}>
-    <div slot="loading">
-        {(isPageChanged.set(false)) ? '' : ''}
-    </div>
+    <div slot="loading">{isPageChanged.set(false) ? '' : ''}</div>
     <div
         class="loadable-container"
         out:flashPrevent
@@ -34,7 +32,7 @@
         let:component
     >
         <svelte:component this={component} {params} />
-        {(isPageChanged.set(true)) ? '' : ''}
+        {isPageChanged.set(true) ? '' : ''}
     </div>
 
 </Loadable>
